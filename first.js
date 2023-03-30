@@ -1,1 +1,1 @@
-window.alert('初めてのJavaScript!!')
+window.alert('初めてのJavaScript!別ファイル!');
