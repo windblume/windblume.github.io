@@ -1,7 +1,11 @@
-const loading = document.querySelector('#loading');
+const btn = document.querySelector('#btn');
 
-window.addEventListener('load',()=>{
-    //ローディングが終わった時の処理
-    loading.classList.add('loaded');
-    console.log('loading done!');
-})
+btn.addEventListener('click',() => {
+    document.body.classList.toggle('dark-theme')
+
+    if(btn.textContent === 'ダークモードにする'){
+        btn.textContent = 'ライトモードにする';
+    }else{
+        btn.textContent = 'ダークモードにする';
+    }
+});
